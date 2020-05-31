@@ -1,0 +1,132 @@
+1 2 0 0
+1 3 0 0
+1 4 0 0
+1 5 0 0
+1 6 0 0
+1 7 0 0
+1 8 0 0
+1 9 0 0
+1 10 0 0
+1 11 0 0
+1 12 0 0
+1 13 0 0
+1 14 0 0
+1 15 0 0
+1 16 0 0
+1 17 0 0
+1 18 0 0
+1 19 0 0
+1 20 0 0
+1 21 0 0
+1 22 0 0
+1 23 0 0
+1 24 0 0
+1 25 0 0
+1 26 0 0
+1 27 0 0
+1 28 0 0
+1 29 0 0
+1 30 0 0
+1 31 0 0
+1 32 0 0
+1 33 0 0
+1 34 0 0
+1 35 0 0
+1 36 0 0
+1 37 0 0
+1 38 0 0
+1 39 0 0
+1 40 0 0
+1 41 0 0
+1 42 0 0
+1 43 0 0
+1 44 0 0
+1 45 0 0
+1 46 0 0
+1 47 0 0
+1 48 0 0
+1 49 0 0
+1 50 0 0
+1 51 0 0
+1 52 0 0
+1 53 0 0
+1 54 0 0
+1 55 0 0
+1 56 0 0
+1 57 0 0
+1 58 0 0
+1 59 0 0
+1 60 0 0
+1 61 0 0
+1 62 0 0
+1 63 0 0
+1 64 0 0
+1 65 0 0
+1 66 0 0
+0
+66 reachable_goal
+12 reachable(c6(p0,f1))
+13 reachable(c22(f0,f1))
+14 reachable(c30(f0,f1))
+15 reachable(c28(f0))
+16 reachable(c28(f1))
+17 reachable(c27(f0))
+18 reachable(c27(f1))
+19 reachable(c20(f0))
+20 reachable(c20(f1))
+21 reachable(c19(f0))
+22 reachable(c19(f1))
+23 reachable(c29(f0))
+24 reachable(c21(f0))
+25 reachable(c18(f0,f1))
+27 reachable(c23(f1,f0))
+28 reachable(c24(f1))
+30 reachable(c29(f1))
+31 reachable(c21(f1))
+32 reachable(c26(f1,f0))
+34 reachable(c31(f0,f1))
+35 reachable(c32(f0))
+36 reachable(c5(f0))
+37 reachable(c5(f1))
+38 reachable(c4(p0))
+39 reachable(c3(f0))
+40 reachable(c3(f1))
+41 reachable(c2(f1,p0))
+43 reachable(c7(p0))
+44 reachable(c8(p0))
+46 reachable(c14(p0))
+47 reachable(c13(p0,f0))
+48 reachable(c12(f0))
+49 reachable(c12(f1))
+50 reachable(c11(p0))
+51 reachable(c10(f0))
+52 reachable(c10(f1))
+53 reachable(c9(f0,p0))
+55 reachable(c15(p0))
+56 reachable(c16(p0))
+57 reachable(c17(p0))
+59 reachable(c25(f0))
+60 reachable(c33(f1))
+64 reachable(c1)
+65 reachable(c0)
+26 reachable_a(up(f0,f1))
+33 reachable_a(down(f1,f0))
+42 reachable_a(board(f1,p0))
+54 reachable_a(depart(f0,p0))
+5 reachable_f(passenger(p0))
+6 reachable_f(floor(f0))
+7 reachable_f(floor(f1))
+8 reachable_f(above(f0,f1))
+9 reachable_f(origin(p0,f1))
+10 reachable_f(destin(p0,f0))
+11 reachable_f(lift__at(f0))
+29 reachable_f(lift__at(f1))
+45 reachable_f(boarded(p0))
+58 reachable_f(served(p0))
+0
+B+
+0
+B-
+1
+0
+1

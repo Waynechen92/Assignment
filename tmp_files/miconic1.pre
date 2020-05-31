@@ -1,0 +1,58 @@
+object(p0).
+object(f0).
+object(f1).
+reachable_a(board(A, B)) :- reachable(c2(A, B)).
+reachable(c2(A, B)) :- reachable(c3(A)), reachable(c4(B)), reachable(c5(A)), reachable(c6(B, A)).
+reachable(c3(A)) :- reachable_f(floor(A)).
+reachable(c4(A)) :- reachable_f(passenger(A)).
+reachable(c5(A)) :- reachable_f(lift__at(A)).
+reachable(c6(A, B)) :- reachable_f(origin(A, B)).
+reachable(c7(B)) :- reachable_a(board(A, B)).
+reachable(c8(A)) :- reachable(c7(A)).
+reachable_f(boarded(A)) :- reachable(c8(A)).
+reachable_a(depart(A, B)) :- reachable(c9(A, B)).
+reachable(c9(A, B)) :- reachable(c10(A)), reachable(c11(B)), reachable(c12(A)), reachable(c13(B, A)), reachable(c14(B)).
+reachable(c10(A)) :- reachable_f(floor(A)).
+reachable(c11(A)) :- reachable_f(passenger(A)).
+reachable(c12(A)) :- reachable_f(lift__at(A)).
+reachable(c13(A, B)) :- reachable_f(destin(A, B)).
+reachable(c14(A)) :- reachable_f(boarded(A)).
+reachable(c15(B)) :- reachable_a(depart(A, B)).
+reachable(c16(A)) :- reachable(c15(A)).
+reachable(c17(A)) :- reachable(c15(A)).
+reachable_f(served(A)) :- reachable(c17(A)).
+reachable_a(up(A, B)) :- reachable(c18(A, B)).
+reachable(c18(A, B)) :- reachable(c19(A)), reachable(c20(B)), reachable(c21(A)), reachable(c22(A, B)).
+reachable(c19(A)) :- reachable_f(floor(A)).
+reachable(c20(A)) :- reachable_f(floor(A)).
+reachable(c21(A)) :- reachable_f(lift__at(A)).
+reachable(c22(A, B)) :- reachable_f(above(A, B)).
+reachable(c23(B, A)) :- reachable_a(up(A, B)).
+reachable(c24(A)) :- reachable(c23(A, B)).
+reachable(c25(B)) :- reachable(c23(A, B)).
+reachable_f(lift__at(A)) :- reachable(c24(A)).
+reachable_a(down(A, B)) :- reachable(c26(A, B)).
+reachable(c26(A, B)) :- reachable(c27(A)), reachable(c28(B)), reachable(c29(A)), reachable(c30(B, A)).
+reachable(c27(A)) :- reachable_f(floor(A)).
+reachable(c28(A)) :- reachable_f(floor(A)).
+reachable(c29(A)) :- reachable_f(lift__at(A)).
+reachable(c30(A, B)) :- reachable_f(above(A, B)).
+reachable(c31(B, A)) :- reachable_a(down(A, B)).
+reachable(c32(A)) :- reachable(c31(A, B)).
+reachable(c33(B)) :- reachable(c31(A, B)).
+reachable_f(lift__at(A)) :- reachable(c32(A)).
+reachable_f(passenger(p0)).
+reachable_f(floor(f0)).
+reachable_f(floor(f1)).
+reachable_f(above(f0, f1)).
+reachable_f(origin(p0, f1)).
+reachable_f(destin(p0, f0)).
+reachable_f(lift__at(f0)).
+equal(A, B) :- object(A), object(B), A = B.
+reachable_goal :- reachable(c0).
+reachable(c0) :- reachable(c1).
+reachable(c1) :- reachable_f(served(p0)).
+#show reachable_a/1.
+#show reachable_f/1.
+#show reachable/1.
+#show reachable_goal/0.
